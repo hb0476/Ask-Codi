@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Arena</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Add more styles for buttons, images, colors, etc. */
+    </style>
+</head>
+<body>
+    <h1>Welcome to Sports Arena</h1>
+    <div>
+        <h2>Available Sports and Time Slots:</h2>
+        <ul>
+            <li>Basketball - 10:00 AM to 12:00 PM ($20)</li>
+            <li>Tennis - 2:00 PM to 4:00 PM ($15)</li>
+            <!-- Add more sports with their respective time slots and prices -->
+        </ul>
+        <label for="sportsSelect">Select Sport:</label>
+        <select id="sportsSelect">
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+            <!-- Add more options for other sports -->
+        </select>
+        <label for="timeSlot">Select Time Slot:</label>
+        <input type="time" id="timeSlot">
+        <button onclick="calculateCost()">Calculate Total Cost</button>
+        <div id="totalCost"></div>
+    </div>
+    <div>
+        <h2>Arena Timings:</h2>
+        <p>Monday to Friday: 9:00 AM - 9:00 PM</p>
+        <!-- Add more arena timings for other days -->
+    </div>
+    <div>
+        <h2>Location and Links:</h2>
+        <p>123 Arena Street, City, Country</p>
+        <a href="map">View Map</a>
+        <a href="reviews">Read Reviews</a>
+        <!-- Add more links and location details -->
+    </div>
+    <script>
+        function calculateCost() {
+            // Your JavaScript code to calculate the total cost and generate receipt here
+            // You can use DOM manipulation to update the totalCost div with the calculated cost
+        }
+    </script>
+</body>
+</html>
